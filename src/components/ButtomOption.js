@@ -24,19 +24,19 @@ const useStyles = makeStyles({
 
 const paths = [
   {
-    path: '/resumen',
+    path: './resumen',
     nombre: 'Resumen'
   },
   {
-    path: '/sobremi',
+    path: './sobremi',
     nombre: 'Sobre mi'
   },
   {
-    path: '/proyectos',
+    path: './proyectos',
     nombre: 'Proyectos'
   },
   {
-    path: '/contacto',
+    path: './contacto',
     nombre: 'Contacto'
   }
 ]
