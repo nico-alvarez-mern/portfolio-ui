@@ -7,21 +7,25 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import { Grid } from '@material-ui/core';
 
 const useStyles = makeStyles({
   root: {
     maxWidth: 345,
+    minHeight: 360,
   },
   media: {
     height: 140,
   },
   flex: {
       display: 'flex',
-      justifyContent: 'center'
+      justifyContent: 'center',
+      alignContent: 'flex-end',
+      
   }
 });
 
-export function MediaCard({title,information,image,github,website}) {
+export function MediaCard({title,information,image,github,liveDemo}) {
   const classes = useStyles();
 
   return (
@@ -29,7 +33,7 @@ export function MediaCard({title,information,image,github,website}) {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="/static/images/cards/contemplative-reptile.jpg"
+          image={image}
           title={title}
         />
         <CardContent>
@@ -42,12 +46,13 @@ export function MediaCard({title,information,image,github,website}) {
         </CardContent>
       </CardActionArea>
       <CardActions className={classes.flex}>
-        <Button size="small" color="primary">
-          Github
-        </Button>
+          <Button size="small" color="primary">
+            Github
+          </Button>
         <Button size="small" color="primary">
           Live Demo
         </Button>
+        
       </CardActions>
     </Card>
   );
