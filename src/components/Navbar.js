@@ -31,24 +31,28 @@ export const Navbar = ({toggleDrawer}) => {
                         <NavLink    to="/resumen" 
                                     component={Button}
                                     color="inherit"
+                                    exact
                         >
                             Resumen
                         </NavLink>
                         <NavLink    to="/sobremi" 
                                     component={Button}
                                     color="inherit"
+                                    exact
                         >
                             Sobre Mi
                         </NavLink>
                         <NavLink    to="/proyectos" 
                                     component={Button}
                                     color="inherit"
+                                    exact
                         >
                             Proyectos
                         </NavLink>
                         <NavLink    to="/contacto" 
                                     component={Button}
                                     color="inherit"
+                                    exact
                         >
                             Contacto
                         </NavLink>
