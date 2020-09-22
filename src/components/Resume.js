@@ -40,9 +40,6 @@ export const Resume = () => {
                             Nicolas Alvarez
                         </Typography>
                     </Grid>
-                    <Grid container justify="center" item xs={12}>
-                        
-                    </Grid>
                     <Grid   container item xs={12} 
                             justify="flex-start" 
                             direction="column"
