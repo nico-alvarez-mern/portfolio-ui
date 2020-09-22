@@ -5,7 +5,7 @@ import {AppBar,
         Button,
         Grid,
         Hidden} from '@material-ui/core';
-import {  NavLink} from 'react-router-dom'
+import {  Link} from 'react-router-dom'
 import { IconButton } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 
@@ -28,34 +28,34 @@ export const Navbar = ({toggleDrawer}) => {
                 </Grid>
                 <Hidden smDown>
                     <Grid container justify="flex-end" >
-                        <NavLink    to="/resumen" 
-                                    component={Button}
-                                    color="inherit"
+                        <Link   to="/resumen" 
+                                component={Button}
+                                color="inherit"
                                     
                         >
                             Resumen
-                        </NavLink>
-                        <NavLink    to="/sobremi" 
+                        </Link>
+                        <Link    to="/sobremi" 
                                     component={Button}
                                     color="inherit"
                                     
                         >
                             Sobre Mi
-                        </NavLink>
-                        <NavLink    to="/proyectos" 
+                        </Link>
+                        <Link    to="/proyectos" 
                                     component={Button}
                                     color="inherit"
                                     
                         >
                             Proyectos
-                        </NavLink>
-                        <NavLink    to="/contacto" 
+                        </Link>
+                        <Link   to="/contacto" 
                                     component={Button}
                                     color="inherit"
                                     
                         >
                             Contacto
-                        </NavLink>
+                        </Link>
                             
                     </Grid>
                 </Hidden>

@@ -1,6 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
-import {  NavLink} from 'react-router-dom'
+import {  Link} from 'react-router-dom'
 import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import Button from '@material-ui/core/Button';
@@ -43,14 +43,14 @@ const paths = [
 
 const navlink = (index)=>{
   return (
-    <NavLink  to={paths[index].path}
+    <Link  to={paths[index].path}
               component={Button}
               color="inherit"
               style={{display: 'block',marginLeft: '20px'}}
               exact
     >
       {paths[index].nombre}
-    </NavLink>
+    </Link>
   )
 }
 

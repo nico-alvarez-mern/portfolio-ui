@@ -30,11 +30,11 @@ export function AppRouter() {
             <Navbar toggleDrawer={toggleDrawer}/>
             <TemporaryDrawer toggleDrawer={toggleDrawer} state={state}/>
             <Switch>
+                <Route exact path="/" component={PortFolio} />
                 <Route path="/resumen" component={Resume} />
                 <Route path="/sobremi" component={AboutMe} />
                 <Route path="/proyectos" component={Projects} />
                 <Route path="/contacto" component={Contact} />
-                <Route path="/" component={PortFolio} />
                 <Redirect to="/" />
             </Switch>
         </div>
