@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
       marginTop: '20px',
     },
     marginTop: {
-        /* marginTop: '10px' */
+        marginTop: '10px'
     },
     resumeRightCol :{
         background: '#27221F',
@@ -84,7 +84,7 @@ export const Resume = () => {
                         </Grid>
                         <Grid xs={8}>
                             <h2 className="fs-2">Universidad Nacional Tecnologica</h2>
-                            <p className={`fs-1`}>Tecnico Superior en Sistemas Informaticos</p>
+                            <p className="fs-1">Tecnico Superior en Sistemas Informaticos</p>
                         </Grid>
                     </Grid>
                     <Divider style={{borderTop: '3px solid #e22947',marginTop: '30px'}}/>
