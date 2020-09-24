@@ -65,7 +65,7 @@ export const Contact = () => {
                     </Grid> 
                     <Grid container item alignItems="center" className={classes.marginTop}>
                         <i className={`fa fa-envelope ${classes.icono}`} aria-hidden="true"/>
-                        <Typography variant="h6">nicolas.alvarez.mern@gmail.com</Typography>
+                        <p>nicolas.alvarez.mern@gmail.com</p>
                     </Grid> 
                 </Grid>
             </Grid>
