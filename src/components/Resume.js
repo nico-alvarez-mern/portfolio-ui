@@ -1,4 +1,4 @@
-import { Grid,Avatar,makeStyles, Container,Divider,Typography} from '@material-ui/core'
+import { Grid,Avatar,makeStyles, Container,Divider,Typography, Hidden} from '@material-ui/core'
 import React from 'react';
 import {Skills} from './Skills';
 import { Education } from './Education';
@@ -83,7 +83,6 @@ export const Resume = () => {
                             <p className="fs-1">01-02-2020 - actualmente</p>
                         </Grid>
                         <Grid sm={8} xs={12}>
-                            
                             <h2 className="fs-2">Universidad Nacional Tecnologica</h2>
                             <p className="fs-1">Tecnico Superior en Sistemas Informaticos</p>
                         </Grid>
