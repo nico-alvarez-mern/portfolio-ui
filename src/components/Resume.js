@@ -46,7 +46,7 @@ export const Resume = () => {
                             alignContent="flex-start"
                             alignItems="flex-start"
                     >
-                        <Typography variant="h5" style={{color: 'grey'}}>
+                        <Typography variant="h5" style={{color: 'grey', paddingTop: '40px'}}>
                             Programador
                         </Typography>
                         <Divider style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
