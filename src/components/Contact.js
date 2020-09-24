@@ -19,21 +19,28 @@ const useStyles = makeStyles((theme) => ({
     icono : {
         fontSize: '66px',
         paddingRight: '1rem'
-    }
+    },
+    resumeRightCol :{
+        background: '#27221F',
+        color: 'white',
+        padding: '2em',
+        marginTop: '20px',
+        borderRadius: '20px',
+    },
   }));
 
 export const Contact = () => {
     const classes = useStyles();
     return (
-        <Container style={{marginTop: '20px'}} className="animate__animated animate__fadeIn">
-            <Grid container direction="row">
+        <Container style={{marginTop: '20px'}} className={`animate__animated animate__fadeIn ${classes.resumeRightCol}`}>
+            <Grid container direction="row" className={classes.resumeRightCol} justify="center">
                 <Grid container item sm={6} xs={12} direction="column" alignItems="center">
                     <Hidden xsDown>
                         <Avatar 
                                 alt="Remy Sharp" 
                                 src="./nico-alvarez.jpg" 
                                 className={classes.large}
-                                variant="square"
+                                variant="rounded"
                         />
                         
                             <Typography variant="h4">
