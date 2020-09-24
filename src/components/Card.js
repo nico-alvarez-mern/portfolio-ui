@@ -25,9 +25,10 @@ const useStyles = makeStyles({
   }
 });
 
+
 export function MediaCard({title,information,image,github,liveDemo}) {
   const classes = useStyles();
-
+  
   return (
     <Card className={classes.root}>
       <CardActionArea>
@@ -46,12 +47,16 @@ export function MediaCard({title,information,image,github,liveDemo}) {
         </CardContent>
       </CardActionArea>
       <CardActions className={classes.flex}>
+        <a href={github} style={{textDecoration: 'none'}} target="_blank">
           <Button size="small" color="primary">
             Github
           </Button>
-        <Button size="small" color="primary">
-          Live Demo
-        </Button>
+        </a>
+        <a href={liveDemo} style={{textDecoration: 'none'}} target="_blank">
+          <Button size="small" color="primary">
+            Live Demo
+          </Button>
+        </a>
         
       </CardActions>
     </Card>

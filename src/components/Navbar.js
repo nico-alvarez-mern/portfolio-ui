@@ -20,11 +20,15 @@ export const Navbar = ({toggleDrawer}) => {
                 </IconButton>
                 
                 <Grid container>
-                    <Button color="inherit">
-                        <Typography variant="h6">
-                            Nicolas Alvarez
-                        </Typography>
-                    </Button>
+                        <Link   to="/" 
+                                component={Button}
+                                color="inherit"
+                                    
+                        >
+                            <Typography variant="h6">
+                                Nicolas Alvarez
+                            </Typography>
+                        </Link>
                 </Grid>
                 <Hidden smDown>
                     <Grid container justify="flex-end" >
@@ -35,13 +39,13 @@ export const Navbar = ({toggleDrawer}) => {
                         >
                             Resumen
                         </Link>
-                        <Link    to="/sobremi" 
+                        {/* <Link    to="/sobremi" 
                                     component={Button}
                                     color="inherit"
                                     
                         >
                             Sobre Mi
-                        </Link>
+                        </Link> */}
                         <Link    to="/proyectos" 
                                     component={Button}
                                     color="inherit"

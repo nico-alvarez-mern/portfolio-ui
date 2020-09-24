@@ -23,10 +23,6 @@ const paths = [
     nombre: 'Resumen'
   },
   {
-    path: '/sobremi',
-    nombre: 'Sobre mi'
-  },
-  {
     path: '/proyectos',
     nombre: 'Proyectos'
   },
@@ -56,7 +52,7 @@ export default function TemporaryDrawer({toggleDrawer,state}) {
   const list = () => (
     <div  className={clsx(classes.list)}>
       <List>
-        {['Resumen', 'Sobre mi', 'Proyectos', 'Contacto'].map((text, index) => (
+        {['Resumen', 'Proyectos', 'Contacto'].map((text, index) => (
           <ListItem button key={text} component={() => navlink(index)}>
           </ListItem>
         ))}

@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
 export const Resume = () => {
     const classes = useStyles();
     return (
-        <Container maxWidth="lg">
+        <Container maxWidth="lg" className="animate__animated animate__fadeIn">
             <Grid container>
                 <Grid container item xs={12} sm={4}>
                     <Grid container item xs={12} justify="center" direction="column" alignItems="center">
@@ -74,15 +74,16 @@ export const Resume = () => {
                     
                 </Grid>
                 <Grid item xs={12} sm={8} className={classes.resumeRightCol} 
-                        direction="row"
+                        direction="column"
                         
                     >
                     <h2 style={{fontSize: '45px',fontWeight: 'lighter'}}>Educacion</h2>
                     <Grid container direction="row" alignItems="center" >
-                        <Grid xs={4}>
+                        <Grid sm={4} xs={12}>
                             <p className="fs-1">01-02-2020 - actualmente</p>
                         </Grid>
-                        <Grid xs={8}>
+                        <Grid sm={8} xs={12}>
+                            
                             <h2 className="fs-2">Universidad Nacional Tecnologica</h2>
                             <p className="fs-1">Tecnico Superior en Sistemas Informaticos</p>
                         </Grid>
@@ -90,25 +91,25 @@ export const Resume = () => {
                     <Divider style={{borderTop: '3px solid #e22947',marginTop: '30px'}}/>
                     <h2 style={{fontSize: '45px',fontWeight: 'lighter'}}>Experiencia</h2>                    
                     <Grid container direction="row" alignItems="center" >
-                        <Grid xs={4}>
+                        <Grid sm={4} xs={12}>
                             <p className="fs-1">01-06-2020 - actualmente</p>
                         </Grid>
-                        <Grid xs={8}>
+                        <Grid sm={8} xs={12}>
                             <h2 className="fs-2">Epidata: Desarrollador Full Stack</h2>
                             <p className="fs-1">Desarrollo web con React, Node, Mongo y express</p>
                         </Grid>
-                        <Grid xs={4}>
+                        <Grid sm={4} xs={12}>
                             <p className="fs-1">01-02-2020 - 01-06-2020</p>
                         </Grid>
-                        <Grid xs={8}>
+                        <Grid sm={8} xs={12}>
                             <h2 className="fs-2">Epidata: Mulesoft Integrations Developer</h2>
                             <p className={`fs-1`}>Desarrollo de 30 conectores más test y deploy de los mismos en Mule4, una herramienta basada en Java para crear conectores e integraciones con otras apps.
                             Las funcionalidades de los conectores eran: Leer archivos de servidores FTP. Enviar mails con información de archivos o de base de datos. Enviar archivos de un servidor FTP a otro. Parseo de información para envío de mails, escribir otros archivos o ejecución de distintos stores procedures de base Oracle. Arquitectura del proyecto, variables de entorno, generación de logs.</p>
                         </Grid>
-                        <Grid xs={4}>
+                        <Grid sm={4} xs={12}>
                             <p className="fs-1">04-11-2019 - 01-02-2020</p>
                         </Grid>
-                        <Grid xs={8}>
+                        <Grid sm={8} xs={12}>
                             <h2 className="fs-2">Epidata: Java Developer</h2>
                             <p className="fs-1">Desarrollo backend utilizando Java+Spring Servicios API Rest, Integración con APIs externas, MySql , Test JUnit.</p>
                         </Grid>

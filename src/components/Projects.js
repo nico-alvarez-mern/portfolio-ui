@@ -33,8 +33,9 @@ const projects = [
     },
 ]
 export const Projects = () => {
+
     return (
-        <Container className="mt-5 container-card">
+        <Container className="mt-5 container-card animate__animated animate__fadeIn" >
         <Grid container spacing={3} justify="flex-start" alignContent="center">
         {
             projects.map( project => (
