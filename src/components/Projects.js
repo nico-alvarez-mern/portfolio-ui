@@ -31,6 +31,13 @@ const projects = [
         liveDemo: 'https://heroes-react-app.vercel.app/marvel',
         image: './heroes-app.PNG'
     },
+    {
+        title: 'Calzado E-Commerce',
+        information: 'Un pequeño ejemplo de un e-commerce creado en react',
+        github: 'https://github.com/nicoAlvarezMern/test-maquetado',
+        liveDemo: 'https://test-maquetado.vercel.app/',
+        image: './venta-zapatillas.PNG'
+    }
 ]
 export const Projects = () => {
 
