@@ -37,6 +37,13 @@ const projects = [
         github: 'https://github.com/nicoAlvarezMern/test-maquetado',
         liveDemo: 'https://test-maquetado.vercel.app/',
         image: './venta-zapatillas.PNG'
+    },
+    {
+        title: 'Registro de Citas Veterinaria',
+        information: 'Una pequeña practica de react',
+        github: 'https://github.com/nicoAlvarezMern/citas-veterinaria',
+        liveDemo: 'https://nervous-hamilton-a04232.netlify.app/',
+        image: './citas.PNG'
     }
 ]
 export const Projects = () => {
